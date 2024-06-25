@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student & Book Details Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student & Book Details Form</h1>
+        <form id="detailsForm">
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+            </div>
+            <div class="form-group">
+                <label for="studentAge">Student Age:</label>
+                <input type="number" id="studentAge" name="studentAge" required>
+            </div>
+            <div class="form-group">
+                <label for="studentGrade">Student Grade:</label>
+                <input type="text" id="studentGrade" name="studentGrade" required>
+            </div>
+            <div class="form-group">
+                <label for="bookTitle">Book Title:</label>
+                <input type="text" id="bookTitle" name="bookTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="bookAuthor">Book Author:</label>
+                <input type="text" id="bookAuthor" name="bookAuthor" required>
+            </div>
+            <div class="form-group">
+                <label for="bookGenre">Book Genre:</label>
+                <select id="bookGenre" name="bookGenre" required>
+                    <option value="">Select Genre</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Non-Fiction">Non-Fiction</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Mystery">Mystery</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bookPages">Book Pages:</label>
+                <input type="number" id="bookPages" name="bookPages" required>
+            </div>
+            <div class="form-group">
+                <label for="bookPrice">Book Price:</label>
+                <input type="number" id="bookPrice" name="bookPrice" required>
+            </div>
+            <div class="form-group">
+                <label for="bookQuantity">Book Quantity:</label>
+                <input type="number" id="bookQuantity" name="bookQuantity" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#detailsForm').submit(function(e) {
+                e.preventDefault();
+                let formData = $(this).serializeArray();
+                console.log(formData);
+                alert('Form submitted successfully!');
+            });
+        });
+    </script>
+</body>
+</html>
