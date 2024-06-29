@@ -48,6 +48,24 @@
             bottom: 0;
             width: 100%;
         }
+        .container {
+            width: 50%;
+            height: 400px;
+            display:flex;
+            gap:5px
+        }
+        .container img {
+            width: 10%;
+            height:100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid white;
+            transition:all ease-out 1s;
+
+        }
+        .container img:hover {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -56,7 +74,7 @@
     </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <!-- <a href="about.html">About</a> -->
         <a href="form.html">Furm</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="Inspire.html">Inspiring</a>
@@ -64,21 +82,13 @@
         <a href="contact.html">Contact</a>
     </nav>
     <div class="gallery">
-        <div class="block">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-        </div>
-        </div>
-        <div class="gallery">
-            <div class="block">
-                <img src="4.jpg" alt="Image 4">
-            </div>
-            <div class="block">
-                <img src="5.jpg" alt="Image 5">
-            </div>
-            <div class="block">
-                <img src="6.jpg" alt="Image 6">
+        <div class="container">
+            <img src="1.jpg" alt="">
+            <img src="2.jpg" alt="">
+            <img src="3.jpg" alt="">
+            <img src="4.jpg" alt="">
+            <img src="5.jpg" alt="">
+            <img src="6.jpg" alt="">
             </div>
         </div>
     </div>
