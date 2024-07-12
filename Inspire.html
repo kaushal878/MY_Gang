@@ -49,15 +49,23 @@
             height: auto;
             border-radius: 8px;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
+       footer {
+           background-color: #BFBFFF;
+           color: #fff;
+           text-align: center;
+           padding: 10px 0;
+           /* position: fixed; */
+           bottom: 0;
+           width: 100%;
+       } 
+        .backBtn {
             position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+            right: 1rem;
+             bottom: 1rem;
+        /* position: fixed; */
+        /* left: 90%; */
+        /* top: 70%; */
+}
     </style>
 </head>
 <body>
@@ -85,7 +93,7 @@
             <p>- Your name or organization</p>
             
         </div>    
-        
+        <button class='backBtn' onclick="history.back(-1)">GO BACK! </button>
         <!-- Add more blocks as needed -->
     </div>
     <footer>

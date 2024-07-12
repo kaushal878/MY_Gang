@@ -39,15 +39,15 @@
             object-fit: cover;
             margin: 10px;
         }
-        footer {
-            background-color: #BFBFFF;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+      footer {
+          background-color: #BFBFFF;
+          color: #fff;
+          text-align: center;
+          padding: 10px 0;
+          /* position: fixed; */
+          bottom: 0;
+          width: 100%;
+      } 
         .container {
             width: 50%;
             height: 400px;
@@ -66,6 +66,15 @@
         .container img:hover {
             width: 100%;
         }
+        .backBtn {
+            position: fixed;
+            right: 1rem;
+            
+             bottom: 1rem;
+        /* position: fixed; */
+        /* left: 90%; */
+        /* top: 70%; */
+}
     </style>
 </head>
 <body>
@@ -90,6 +99,7 @@
             <img src="5.jpg" alt="">
             <img src="6.jpg" alt="">
             </div>
+            <button class='backBtn' onclick="history.back(-1)">GO BACK! </button>
         </div>
     </div>
     <footer>

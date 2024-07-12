@@ -50,14 +50,22 @@
             border-radius: 8px;
         }
         footer {
-            background-color: #333;
+            background-color: #BFBFFF;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            /* position: fixed; */
             bottom: 0;
             width: 100%;
-        }
+        } 
+        .backBtn {
+            position: fixed;
+            right: 1rem;
+             bottom: 1rem;
+        /* position: fixed; */
+        /* left: 90%; */
+        /* top: 70%; */
+}
     </style>
 </head>
 <body>
@@ -65,7 +73,7 @@
         <a href="index.html" style="text-decoration:none"><h1>My Gang</h1></a>
     </header>
     <nav>
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         <!-- <a href="about.html">About</a> -->
         <a href="form.html">Form</a>
         <a href="Inspire.html">Inspiring</a>
@@ -84,6 +92,7 @@
     
         
         </div>
+        <button class='backBtn' onclick="history.back(-1)">GO BACK! </button>
     </select>
     <footer>
         <p>&copy; 2024 My Gang</p>
