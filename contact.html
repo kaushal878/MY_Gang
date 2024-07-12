@@ -66,6 +66,49 @@
         /* left: 90%; */
         /* top: 70%; */
 }
+.btn {
+            position: fixed;
+            right: 1rem;
+             bottom: 1rem;
+             color: #0fca2f;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: #101011 1px 0 10px;
+            height: 75px;
+            width: 75px;
+            border: solid 1px #D1C4E9;
+            border-radius: 175px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        /* position: fixed; */
+        /* left: 90%; */
+        /* top: 70%; */
+        }
+        .btn:before {
+             content: '';
+             position: absolute;
+             background: #9575CD;
+             width: 0;
+             height: 0;
+             z-index: -1;
+             border-radius: 175px;
+             box-shadow: 0px 0px 24px 1px rgba(224,199,224,0.2);
+             transition: all 900ms cubic-bezier(1.000, -0.195, 0.000, 1.330);
+             transition-timing-function: cubic-bezier(1.000, -0.195, 0.000, 1.330);
+            }
+
+            btn:hover:before {
+             width: 85%;
+             height: 85%;
+            }
+
+            btn:active:before, .btn:focus:before {
+             width: 100%;
+             height: 100%;
+            }
     </style>
 </head>
 <body>
@@ -76,9 +119,10 @@
         <a href="index.html">Home</a>
         <!-- <a href="about.html">About</a> -->
         <a href="form.html">Form</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="animated_galary.html">Animated-Galary</a>
         <a href="Inspire.html">Inspiring</a>
         <a href="Entertainment.html"> Entertainment</a>
-        <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
     </nav>
     <select class="about-us">
@@ -92,7 +136,7 @@
     
         
         </div>
-        <button class='backBtn' onclick="history.back(-1)">GO BACK! </button>
+        <button class='btn' onclick="history.back(-1)">GO BACK! </button>
     </select>
     <footer>
         <p>&copy; 2024 My Gang</p>
